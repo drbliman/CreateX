@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+.consruction {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 988px;
+    overflow: hidden;
+}
+.photo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 988px;
+    background-image: url(../img/photo1.jpg);
+    background-position: center;
+}
