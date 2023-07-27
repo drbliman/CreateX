@@ -3,6 +3,7 @@ main {
     flex-direction: column;
 }
 .consruction {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -24,8 +25,8 @@ main {
     color: #FF5A30;
 }
 .text {
+    position: relative;
     display: flex;
-    flex-direction: row;
     width: 595px;
     height: 90px;
     font-size: 20px;
@@ -36,6 +37,39 @@ main {
     margin: 24px 0 0 17.9%;
     overflow: hidden;
 }
+.text_0 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    width: 2380px;
+    height: 90px;
+    transition: all 0.3s ease 0s;
+}
 .text_1 {
-    width: 3280px;
+    width: 595px;
+    height: 90px;
+}
+.icon_arrow_left,
+.icon_arrow_right {
+    position: absolute;
+    top: 455px;
+    left: calc(15% - 40px);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+}
+.icon_arrow_right {
+    left: calc(15% + 650px);
+}
+.icon_arrow_left:hover,
+.icon_arrow_right:hover {
+    background-color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+.icon_arrow_left img,
+.icon_arrow_right img {
+    margin: 8px 0 0 8px;
 }
